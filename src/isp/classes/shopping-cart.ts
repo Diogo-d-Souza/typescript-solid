@@ -25,7 +25,6 @@ export class ShoppingCart {
   }
 
   totalWithDiscount(): number {
-    //this break the LSP
     const result = this.discount.calculate(this.total());
     if (typeof result === 'number') return result;
     return this.total();
