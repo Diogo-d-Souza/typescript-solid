@@ -15,6 +15,14 @@ const persistency = new Persistency();
 // const individualCustomer = new IndividualCustomer('Didas', 'Souza', '11111111');
 const enterpriseCustomer = new EnterpriseCustomer('Didas LTDA', '22222222222');
 
+// class MessagingMock implements MessagingProtocol {
+//   sendMessage(): void {
+//     console.log('Message sent from mock');
+//   }
+// }
+
+// const messageMock = new MessagingMock();
+
 const order = new Order(
   shoppingCart,
   messaging,
